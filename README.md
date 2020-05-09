@@ -1,4 +1,4 @@
-# <img width="54px" src="https://cloud.noahschepers.com/s/pN2ndKDLFMGEtgD/download" alt="Sapphire"></img> Sapphire Web Server 
+# <img width="54px" src="https://cloud.noahschepers.com/s/pN2ndKDLFMGEtgD/download" alt="Sapphire"></img>Sapphire Web Server 
 
 Nobody touches the server besides Atom :)
 
