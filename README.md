@@ -1,4 +1,4 @@
-![Sapphire Web Server](https://cloud.noahschepers.com/core/preview?fileId=25062&x=1920&y=1080&a=true)
+![Sapphire Web Server](https://cloud.noahschepers.com/s/pN2ndKDLFMGEtgD/download)
 
 # Sapphire Web Server
 
