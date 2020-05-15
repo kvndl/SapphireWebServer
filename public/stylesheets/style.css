@@ -5,6 +5,10 @@ body {
   color: white !important;
 }
 
+#nothing {
+  color: #222424 !important;
+}
+
 a {
   color: white !important;
   text-decoration: none !important;

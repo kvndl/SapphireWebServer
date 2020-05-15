@@ -16,6 +16,7 @@ router.get('/code', function(req, res, next) {
   res.render('code', { title: 'CODE PAGE' });
 });
 
+/* GET media page. */
 router.get('/media', function(req, res, next) {
   res.render('media', { title: 'MEDIA PAGE' });
 });
@@ -28,6 +29,11 @@ router.get('/contact', function(req, res, next) {
 /* GET login page. */
 router.get('/login', function(req, res, next) {
   res.render('login', { title: 'LOGIN PAGE' });
+});
+
+/* GET anti-login page. */
+router.get('/login#youdidthisnotme', function(req, res, next) {
+  res.render('antilogin', { title: 'ANTI-LOGIN PAGE' });
 });
 
 module.exports = router;
