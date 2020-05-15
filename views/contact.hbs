@@ -1,6 +1,17 @@
-<div class="d-flex justify-content-center align-middle mt-md-5" height="10%">
-    <div>
-        {{ title }}
-        <p class="text-muted">stop snooping around man.</p>
+<div class="d-flex justify-content-center align-middle">
+    <div class="row">
+        <div class="col">
+            {{ title }}<br /><br />
+            <form method="POST" action="/contact" id="contact-form">
+                <input type="text" name="name" id="contact-input" class="text-light" placeholder="name" required>
+                <br><br>
+                <input type="email" name="email" id="contact-input" class="text-light" placeholder="email" required>
+                <br><br>
+                <textarea name="message" id="contact-input" class="text-light" placeholder="message" rows="5" cols="30"
+                    required></textarea>
+                <br /><br /><br>
+                <button class="btn btn-outline-light">send message</button>
+            </form>
+        </div>
     </div>
 </div>
