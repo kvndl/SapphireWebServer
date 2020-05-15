@@ -10,12 +10,75 @@ a {
   text-decoration: none !important;
 }
 
-.padL {
-  padding-left: 2em !important;
+a:hover {
+  color: #b8bbd6 !important;
 }
 
-.padR {
-  padding-right: 2em !important;
+.invert {
+  filter: invert(100%);
+}
+
+.invert:hover {
+  filter: invert(80%);
+}
+
+hr {
+  border: .5px solid white !important;
+  width: 70vw;
+}
+
+#fader {
+  animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+}
+
+#fader-2 {
+  animation: fadeIn2 3s;
+  -moz-animation: fadeIn2 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.nope {
+  user-select: none;
+  -moz-user-select: none;
 }
 
 /* Grow */
@@ -61,6 +124,8 @@ a {
   width: 100%;
   color: white;
   text-align: center;
+  user-select: none;
+  -moz-user-select: none;
 }
 
 .footer-icon.animated {

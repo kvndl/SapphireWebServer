@@ -1,0 +1,29 @@
+<svg version="1.1" id="squiggly-line-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 92.8 12" style="enable-background:new 0 0 92.8 12;" xml:space="preserve">
+<style type="text/css">
+  .squiggly-line {
+    fill: none;
+    stroke: #287afc;
+    stroke-width: .8;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 20;
+    stroke-linecap: round;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation: squiggle 8s linear infinite;
+  }
+  @keyframes squiggle {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dashoffset: -50;
+      stroke: white;
+    }
+    100% {
+      stroke-dashoffset: -200;
+    }
+  }
+</style>
+<path class="squiggly-line"  d="M1.4,6c0,0,9-9,18,0s18,0,18,0s9-9,18,0s18,0,18,0s9-9,18,0"/>
+</svg>
