@@ -29,6 +29,11 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'CONTACT' });
 });
 
+/* GET secret page. */
+router.get('/secret', function(req, res, next) {
+  res.render('secret');
+});
+
 /* POST contact page. */
 router.post('/contact', function(req, res) {
   console.log('--- in post contact route ---');
@@ -61,11 +66,6 @@ router.post('/contact', function(req, res) {
       res.render('contact-success');
     }
   })
-})
-
-/* GET secret page. */
-router.get('/secret', function(req, res, next) {
-  res.render('secret');
 });
 
 module.exports = router;
