@@ -140,6 +140,12 @@ hr {
   -moz-animation: fadeIn2 3s;
 }
 
+#fader-3 {
+  -webkit-animation: fadeIn3 3s;
+  animation: fadeIn3 3s;
+  -moz-animation: fadeIn3 3s;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -188,12 +194,34 @@ hr {
   }
 }
 
-@keyframes fadeIn2 {
+@-webkit-keyframes fadeIn3 {
   0% {
     opacity: 0;
   }
 
   60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
     opacity: 0;
   }
 
