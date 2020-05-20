@@ -6,65 +6,78 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>NPS</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/style.min.css' />
+  <link rel="stylesheet" href="/stylesheets/stars.min.css">
   {{!-- DON'T TOUCH MY TOOLS --}}
   <script src="/javascripts/tools.js"></script>
   {{!-- ICONS --}}
   <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-  <link rel="manifest" href="/images/icons/site.webmanifest">
-  {{!-- BEST FONT --}}
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-  {{!-- BULMA --}}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-  {{!-- FA5 --}}
+  <link rel="manifest" href="/images/icons/site.webmanifest">{{!-- BEST FONT --}}
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">{{!-- BULMA --}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">{{!-- FA5 --}}
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
-  {{!-- NAV --}}
-  <nav class="Site-header">
-    <div class="Nav-links">
-      <ul class="ul-nb">
-        <li>
-          <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop" href="/about">about</a>
-        </li>
-        <li>
-          <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop" href="/code">code</a>
-        </li>
-        <li>
-          <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop" href="/media">media</a>
-        </li>
-        <li>
-          <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop" href="/contact">contact</a>
-        </li>
-      </ul>
-    </div>
-    <div class="Nav-logo">
-      <a href="/">
-        <img src="/images/logo.svg" alt="Best logo?" class="hvr-shrink rCircle" id="naturalCauses">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <!-- Begin Actual content -->
+    {{!-- NAV --}}
+    <nav class="Site-header">
+      <div class="Nav-links">
+        <ul class="ul-nb">
+          <li>
+            <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop"
+              href="/about">about</a>
+          </li>
+          <li>
+            <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop"
+              href="/code">code</a>
+          </li>
+          <li>
+            <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop"
+              href="/media">media</a>
+          </li>
+          <li>
+            <a class="hvr-grow has-text-light is-size-4-mobile is-size-4-tablet is-size-5-desktop"
+              href="/contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="Nav-logo">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Best logo?" class="hvr-shrink rCircle" id="naturalCauses">
+        </a>
+      </div>
+    </nav>
+    <main class="Site-content">
+      {{{body}}}
+    </main>
+    <!-- End Actual content -->
+    <footer class="Site-footer" id="poorGuy">
+      <a href="https://www.linkedin.com/in/sch3p/" target="_blank">
+        <img class="invert" src="/images/external_logo/linkedin.png" alt="linkedin" height="30px"
+          width="30px">
       </a>
-    </div>
-  </nav>
-  <main class="Site-content">
-    {{{body}}}
-  </main>
-  <footer class="Site-footer" id="poorGuy">
-    <a href="https://www.linkedin.com/in/sch3p/" target="_blank">
-      <img class="invert" src="/images/external_logo/linkedin.png" alt="linkedin" height="30px" width="30px">
-    </a>
-    <a href="https://twitter.com/sch3p" target="_blank">
-      <img class="invert" src="/images/external_logo/twitter-rounded.png" alt="linkedin" height="30px" width="30px">
-    </a>
-    <a href="https://vimeo.com/sch3p" target="_blank">
-      <img class="invert" src="/images/external_logo/vimeo-rounded.png" alt="linkedin" height="30px" width="30px">
-    </a>
-    &nbsp; | &nbsp; crafted with &nbsp;
-    <a href="/secret">
-      <img src="/images/ut-heart.png" class="footer-icon animated" height="20px" width="20px" />
-    </a>
-  </footer>
+      <a href="https://twitter.com/sch3p" target="_blank">
+        <img class="invert" src="/images/external_logo/twitter-rounded.png" alt="linkedin"
+          height="30px" width="30px">
+      </a>
+      <a href="https://vimeo.com/sch3p" target="_blank">
+        <img class="invert" src="/images/external_logo/vimeo-rounded.png" alt="linkedin"
+          height="30px" width="30px">
+      </a>
+      &nbsp; | &nbsp; crafted with &nbsp;
+      <a href="/secret">
+        <img src="/images/ut-heart.png" class="footer-icon animated" height="20px" width="20px"
+        />
+      </a><br><hr>
+      <p>don't scroll down. you've been warned.</p>
+    </footer>
   {{!-- JQ --}}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>

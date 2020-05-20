@@ -12,6 +12,12 @@ body {
   -moz-user-select: none;
 }
 
+.TheKing {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
 .ul-nb {
   list-style: none;
 }
