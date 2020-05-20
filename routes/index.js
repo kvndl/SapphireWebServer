@@ -1,9 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-// To send mail to myself
-const nodemailer = require('nodemailer')
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index', {
@@ -31,8 +28,6 @@ router.get('/media', function(req, res, next) {
         title: 'MEDIA PAGE'
     });
 });
-
-
 
 /* GET secret page. */
 router.get('/secret', function(req, res, next) {

@@ -1,18 +1,30 @@
-<div class="d-flex justify-content-center align-middle">
-    <div class="row">
-        <div class="col">
-            {{ title }}<br /><br />
-            <form method="POST" action="/contact" id="contact-form">
-                <input type="text" name="name" id="contact-input" class="text-light" placeholder="name" required>
-                <br><br>
-                <input type="email" name="email" id="contact-input" class="text-light" placeholder="email" required>
-                <br><br>
-                <textarea name="message" id="contact-input" class="text-light" placeholder="message" rows="5" cols="30" required></textarea>
-                <br /><br />
-                <label for="antiBot">anti-bot</label><br>
-                <input type="text" id="contact-input" name="antiBot" required placeholder="{{question}}" class="text-light"><br><br>
-                <button type="submit" class="btn btn-outline-light">send message</button>
-            </form>
+<div class="Form-container has-text-light">
+    {{ title }}<br><br>
+    <form method="POST" action="/contact" id="contact-form">
+        <div>
+            <input type="text" name="name" class="input" placeholder="name" required>
+        </div><br>
+        <div>
+            <input type="email" name="email" class="input" placeholder="email" required>
+        </div><br>
+        <div>
+            <label for="subject">reason for contact</label><br>
+            <select name="subject" id="subject" class="select" required>
+                <option value="" selected disabled></option>
+                <option value="Media / Video">Media / Video</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Other">Other (explain below)</option>
+            </select>
+        </div><br>
+        <div>
+            <textarea name="message" class="textarea" placeholder="message" rows="5" cols="40" required></textarea>
+        </div><br>
+        <div>
+            <label for="antiBot">anti-bot</label><br>
+            <input type="text" class="input" name="antiBot" id="antiBot" required placeholder="{{question}}">
+        </div><br>
+        <div>
+            <button type="submit" class="button is-light">send message</button>
         </div>
-    </div>
+    </form>
 </div>

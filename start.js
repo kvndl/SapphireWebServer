@@ -1,5 +1,7 @@
 const app = require('./app');
 
-const server = app.listen(8888, () => {
-    console.log('--- Express is running on port 8888 ---')
+var port = 8888;
+
+const server = app.listen(port, () => {
+    console.log(`--- Express Running: Port ${port} ---`)
 })

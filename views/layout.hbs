@@ -14,56 +14,59 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
   <link rel="manifest" href="/images/icons/site.webmanifest">
-  {{!-- BS CSS --}}
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   {{!-- BEST FONT --}}
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  {{!-- BULMA --}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  {{!-- FA5 --}}
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
-<body id="Site">
+<body>
   {{!-- NAV --}}
-  <div class="container-sm nope">
-    <div class="row justify-content-around getUpHere">
-      <div class="col-5">
-        <a class="hvr-grow" href="/about">about</a><br />
-        <a class="hvr-grow" href="/code">code</a><br />
-        <a class="hvr-grow" href="/media">media</a><br />
-        <a class="hvr-grow" href="/contact">contact</a>
-      </div>
-      <div class="col-2">
-        <a href="/">
-          <img src="/images/logo.svg" alt="Best logo?" class="hvr-shrink rCircle" height="20%" width="auto" id="naturalCauses">
-        </a>
-      </div>
+  <nav class="Site-header">
+    <div class="Nav-links">
+      <ul class="ul-nb">
+        <li>
+          <a class="hvr-grow has-text-light" href="/about">about</a>
+        </li>
+        <li>
+          <a class="hvr-grow has-text-light" href="/code">code</a>
+        </li>
+        <li>
+          <a class="hvr-grow has-text-light" href="/media">media</a>
+        </li>
+        <li>
+          <a class="hvr-grow has-text-light" href="/contact">contact</a>
+        </li>
+      </ul>
     </div>
-      {{{body}}}
-    <div class="footer" id="poorGuy">
-      <a href="https://www.linkedin.com/in/sch3p/" target="_blank">
-        <img class="invert" src="/images/external_logo/linkedin.png" alt="linkedin" height="30px" width="30px">
-      </a>
-      <a href="https://twitter.com/sch3p" target="_blank">
-        <img class="invert" src="/images/external_logo/twitter-rounded.png" alt="linkedin" height="30px" width="30px">
-      </a>
-      <a href="https://vimeo.com/sch3p" target="_blank">
-        <img class="invert" src="/images/external_logo/vimeo-rounded.png" alt="linkedin" height="30px" width="30px">
-      </a>
-      &nbsp; | &nbsp; crafted with &nbsp;
-      <a href="/secret">
-        <img src="/images/ut-heart.png" class="footer-icon animated" height="20px" width="20px" />
+    <div class="Nav-logo">
+      <a href="/">
+        <img src="/images/logo.svg" alt="Best logo?" class="hvr-shrink rCircle" id="naturalCauses">
       </a>
     </div>
-  </div>
-  {{!-- BS JS --}}
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
+  </nav>
+  <main class="Site-content">
+    {{{body}}}
+  </main>
+  <footer class="Site-footer" id="poorGuy">
+    <a href="https://www.linkedin.com/in/sch3p/" target="_blank">
+      <img class="invert" src="/images/external_logo/linkedin.png" alt="linkedin" height="30px" width="30px">
+    </a>
+    <a href="https://twitter.com/sch3p" target="_blank">
+      <img class="invert" src="/images/external_logo/twitter-rounded.png" alt="linkedin" height="30px" width="30px">
+    </a>
+    <a href="https://vimeo.com/sch3p" target="_blank">
+      <img class="invert" src="/images/external_logo/vimeo-rounded.png" alt="linkedin" height="30px" width="30px">
+    </a>
+    &nbsp; | &nbsp; crafted with &nbsp;
+    <a href="/secret">
+      <img src="/images/ut-heart.png" class="footer-icon animated" height="20px" width="20px" />
+    </a>
+  </footer>
+  {{!-- JQ --}}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>

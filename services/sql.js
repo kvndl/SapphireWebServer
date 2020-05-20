@@ -9,7 +9,7 @@ let config = {
     database: process.env.MYSQL_DB_NAME
 }
 
-let connection = mysql.createConnection(config);
-console.log('--- Connected to MariaDB Server ---');
+var connection = mysql.createConnection(config);
+console.log('--- MariaDB Server: Connected ✓ ---');
 
 module.exports = connection;
