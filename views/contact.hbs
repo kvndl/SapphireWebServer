@@ -1,30 +1,72 @@
 <div class="Form-container has-text-light" id="fader">
-    {{ title }}<br><br>
-    <form method="POST" action="/contact" id="contact-form">
-        <div>
-            <input type="text" name="name" class="input" placeholder="name" required>
-        </div><br>
-        <div>
-            <input type="email" name="email" class="input" placeholder="email" required>
-        </div><br>
-        <div>
-            <label for="subject">reason for contact</label><br>
-            <select name="subject" id="subject" class="select" required>
-                <option value="" selected disabled></option>
-                <option value="Media / Video">Media / Video</option>
-                <option value="Software Developer">Software Developer</option>
-                <option value="Other">Other (explain below)</option>
-            </select>
-        </div><br>
-        <div>
-            <textarea name="message" class="textarea" placeholder="message" rows="5" cols="40" required></textarea>
-        </div><br>
-        <div>
-            <label for="antiBot">anti-bot</label><br>
-            <input type="text" class="input" name="antiBot" id="antiBot" required placeholder="{{question}}">
-        </div><br>
-        <div>
-            <button type="submit" class="button is-light">send message</button>
+  <p class="">Fill some things out here for the both us.</p>
+  <p class="">You don't have to, but you can.</p>
+  <hr>
+  <form method="POST" action="/contact" id="contact-form">
+
+    <div class="tab">
+      <p>let's start with the easy stuff</p>
+      <input type="text" name="name" class="input" placeholder="name" oninput="this.className = ''">
+      <br>
+      <br>
+      <input type="email" name="email" class="input" placeholder="email" oninput="this.className = ''">
+    </div>
+
+    <br>
+
+    <div class="tab">
+      <label for="subject">reason for contact</label>
+      <br>
+      <select name="subject" id="subject" class="select" oninput="this.className = ''">
+        <option value="" selected disabled></option>
+        <option value="Media / Video">Media / Video</option>
+        <option value="Software Developer">Software Developer</option>
+        <option value="Other">Other (explain below)</option>
+      </select>
+      <br>
+      <br>
+      <textarea name="message" class="textarea" placeholder="talk about that a bit" rows="5"
+        cols="40" oninput="this.className = ''"></textarea>
+    </div>
+
+    <br>
+
+    <div class="tab">
+      <label for="antiBot">anti-bot.</label>
+      <p class="is-inline" id="anti">nothing to worry about, right?</p>
+      <input type="text" class="input" name="antiBot" id="antiBot" placeholder="{{question}}"
+        oninput="this.className = ''">
+      <br>
+      <br>
+      <button type="submit" class="button is-success">beam it up</button>
+      <button class="button is-danger">self-destruct</button>
+    </div>
+
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <div class="button" id="prevBtn" onclick="nextPrev(-1)">
+          <span class="icon is-medium">
+            <i class="fas fa-chevron-left"></i>
+          </span>
         </div>
-    </form>
+        <div class="button" id="nextBtn" onclick="nextPrev(1)">
+          <span class="icon is-medium">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+
+  </form>
 </div>
+
+{{!-- DON'T TOUCH MY TOOLS --}}
+<script src="/javascripts/tools.js"></script>

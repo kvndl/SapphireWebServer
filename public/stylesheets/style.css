@@ -12,6 +12,54 @@ body {
   -moz-user-select: none;
 }
 
+.tab {
+  display: none;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #E0670A;
+}
+
+#anti {
+  color: rgba(173, 173, 173, 0.15);
+  -webkit-animation: flickerAnim 3s infinite;
+          animation: flickerAnim 3s infinite;
+}
+
+@-webkit-keyframes flickerAnim {
+  0% { opacity: 0;}
+  50% { opacity: 1;}
+  100% { opacity: 0;}
+}
+
+@keyframes flickerAnim {
+  0% { opacity: 0;}
+  50% { opacity: 1;}
+  100% { opacity: 0;}
+}
+
 .TheKing {
   position: absolute !important;
   left: 0 !important;
